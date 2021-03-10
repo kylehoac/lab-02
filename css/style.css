@@ -1,0 +1,26 @@
+header {
+    color:blueviolet;
+    background-color: aqua;
+    border: 1px rgb(36, 117, 238)solid;
+    text-align: center;
+}
+body {
+    background-color:bisque;
+    text-align: center;
+}
+h2 {
+    color: blue;
+    font-weight: 400;
+}
+.pets {
+    margin: 50px 100px;
+    text-decoration: solid;
+    color:darkblue;
+}
+.img {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+}
+    
+
