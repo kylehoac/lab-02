@@ -5,29 +5,58 @@
     <link rel="stylereset" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<header>
-    <h1> "About Me" </h1>
-</header>
 <body>
+    <header>
+        <h1> "About Me" </h1>
+    </header>
+
     <script>
        let userName = prompt('Hi, what is your name?');
        console.log('User name is :' + userName);
        document.write('<h2>' + 'Hello, ' + userName + '</h2>');
-    </script> 
-    <div class="pets">
-        <h3>I like a pet</h3>
-        <p>I like the pets. I have a cat and I hope that soon I will have a dog too</p>
+    </script>
+    <section class='biography'>
+        <h2>My biography</h2>
+        <p>Hi, my name is Rinat. I am from Russia. I lived in Kazan city. There I graduated Kazan Aviation University with bachelor's degree in electronics. After graduation I worked as an electronic engineer. Year and half ago I moved to the US with my family. In the US I worked as appliance repair technician. I have a loving wife and two smart sons. </p>
         <img src="https://images.all-free-download.com/images/graphiclarge/cute_cat_and_dog_picture_6_168799.jpg">
-    </div>
-    <div class="beach">
-        <h3>
-            I like a beach and a sea
-        </h3>
-        <p>I like a travel and a beach vacation. I go to the sea with my famaly every year </p>
-        <img src="https://thumbs.dreamstime.com/z/palms-tropical-beach-white-sand-summer-vacation-travel-holiday-background-concept-caribbean-paradise-beach-palms-136606345.jpg">
-    </div>   
-</body>
+    </section>
+
+    <section class="favorit">
+        <h2>My favorit things</h2>
+        <p>I really like my family.We have a family cat. It is funny, very active ang inteligent. We love our cat very much. Also we want to adopt a dog, because we really like animals.
+        The second thing I really enjoy is traveling. When I lived in Russia, we traveled across Russia and Europe.</p>
+        <img class="pic" src="https://thumbs.dreamstime.com/z/palms-tropical-beach-white-sand-summer-vacation-travel-holiday-background-concept-caribbean-paradise-beach-palms-136606345.jpg"> 
+    </section>  
 <footer>
-    <script src="js/app.js"></script>
-</footer>
+    <section class='country'>
+        <h3>Countries I have visited:</h3>
+        <ol>
+            <li>Spain</li>
+            <li>Greece</li>
+            <li>France</li>
+            <li>Czech Republic</li>
+            <li>Finland</li>
+            <li>Germany</li>
+            <li>Cyprus</li>
+            <li>Turkey</li>
+            <li>Egypt</li>
+            <li>UAE</li>
+        </ol>
+
+    </section>
+    <section class='experience'>
+        <dl>
+            <dt>My education:</dt>
+            <dd>School</dd>
+            <dd>Kazan Aviation University</dd>
+            <dd>Code Fellows</dd>
+            <dt>My experience</dt>
+            <dd>Electronic engineer</dd>
+            <dd>Project manager</dd> 
+            <dd>Technician</dd>
+        </dl>
+    </section>
+        <script src="js/app.js"></script>
+    </footer>
+</body>
 </html>

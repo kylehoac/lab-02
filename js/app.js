@@ -1,65 +1,71 @@
 "use strict";
+let summ = 0;
 while(true){
-    let responsePet = prompt('Do you have a pet, ' + userName + '?'); 
-    if (responsePet.toLowerCase()=='yes') {
-        console.log('The user likes pets');
-        alert("It's great!");
+    let responsePet = prompt(userName + ', do I have a dog?'); 
+    if (responsePet.toLowerCase()=='no') {
+        console.log('The user answered "No"');
+        alert('Correct, I only have a cat');
+        summ++;
         break;
-    } else if (responsePet.toLowerCase()=='no') {
-        console.log('The user doesn\'t like pets');
-        alert("Maybe you should get a pet?");
+    } else if (responsePet.toLowerCase()=='yes') {
+        console.log('The user answered "Yes"');
+        alert("Wrong, I only have a cat");
         break;
     } else{
         alert("Sorry, please answer 'Yes' or 'No'"); 
     }
 } 
 while(true){
-    let responseVacation = prompt('Do you like a beach vacation, ' + userName + '?'); 
+    let responseVacation = prompt('Do I like a travel, ' + userName + '?'); 
     if (responseVacation.toLowerCase()=='yes') {
-        console.log('The user likes a beach vacation');
-        alert("Good, me too");
+        console.log('The user answered "Yes"');
+        alert('Sur!');
+        summ++;
         break;
     } else if (responseVacation.toLowerCase()=='no') {
-        console.log('The user doesn\'t like a beach vacation');
-        alert("Maybe you should try it?");
+        console.log('The user answered "No"');
+        alert("Wrong");
         break;
     } else{
         alert("Sorry, please answer 'Yes' or 'No'"); 
     }
 } 
 while(true){
-    let responseMusic = prompt('Do you like a music, ' + userName + '?'); 
-    if (responseMusic.toLowerCase()=='yes') {
-        console.log('The user likes a music');
-        alert("Great, me too!");
+    let responseLive = prompt('I was born in US?'); 
+    if (responseLive.toLowerCase()=='yes') {
+        console.log('The user answered "Yes"');
+        alert("Oh no, I was born and lived in Russia");
         break;
-    } else if (responseMusic.toLowerCase()=='no') {
-        console.log('The user doesn\'t like a music');
-        alert("In vine, life is more fun with music");
+    } else if (responseLive.toLowerCase()=='no') {
+        console.log('The user answered "No"');
+        alert("You're right!");
+        summ++;
         break;
     } else{
         alert("Sorry, please answer 'Yes' or 'No'"); 
     }
 } 
 while(true){
-    let responseDevice = prompt('Do you like a Apple devices?'); 
+    let responseDevice = prompt('I am single?'); 
     if (responseDevice.toLowerCase()=='yes') {
-        console.log('The user likes an Apple');
-        alert('Fine, I like Apple too!');
+        console.log('The user answered "Yes"');
+        alert('No, I am married');
         break;
     } else if (responseDevice.toLowerCase()=='no') {
-        console.log('The user doesn\'t like an Apple');
-        alert('Cool, but I like Apple');
+        console.log('The user answered "No"');
+        alert('Cool!');
+        summ++;
         break;
     } else{
         alert("Sorry, please answer 'Yes' or 'No'"); 
     }
-} 
+}
 while(true){
     let responseSite = prompt('Do you like this site?'); 
     if (responseSite.toLowerCase()=='yes') {
         console.log('The user likes my site');
-        alert('Thank you, ' + userName + '!');
+        alert('Thanks, ' + userName + '!');
+        summ++;
         break;
     } else if (responseSite.toLowerCase()=='no') {
         console.log('The user doesn\'t like my site');
@@ -69,4 +75,43 @@ while(true){
         alert("Sorry, please answer 'Yes' or 'No'"); 
     }
 } 
+//Guess the number
+let correctAnser = 14;
+  for (let i=4; i>0; i--){
+    let userAnswer = prompt('Guess the number from 1 to 20. You have ' + i + ' attempts.');
+    if (userAnswer == correctAnser){
+      alert('Congratulations, you did it!')
+      summ++;
+      break;
+    }
+    if (userAnswer > correctAnser){
+      alert('This is too much.');}
+    else{alert('This is very little.');}
+    if (i==1){
+      alert('You do not have any more attempts((( Correct answer is: ' + correctAnser)}
+    }
+//Guess my favorit thing
+let favoritThing = ['travel', 'family', 'cat', 'animals'];
+let n=6;
+while (n>0){
+    let userFavorit = prompt('What is one of my favorit things? You have ' + n + ' attempts');
+    for(let i=0; i<favoritThing.length; i++){
+        if (userFavorit.toLocaleLowerCase() == favoritThing[i]){
+            alert("Great, you are genius!");
+            summ++;
+            n=-1;
+            break;    
+        }     
+   } 
+   if (n>0){
+   alert('Wrong, try again');
+   }
+   n--;
+}   
+if (n==0){
+    alert('Correct answers are: ' + favoritThing);
+}
+alert('You answered ' + summ + ' out of 7 questions correctly');
+
+
         

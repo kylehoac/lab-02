@@ -1,7 +1,7 @@
 header {
     color:blueviolet;
     background-color: aqua;
-    border: 1px rgb(36, 117, 238)solid;
+    border: 10px rgb(36, 117, 238)solid;
     text-align: center;
 }
 body {
@@ -12,15 +12,47 @@ h2 {
     color: blue;
     font-weight: 400;
 }
-.pets {
-    margin: 50px 100px;
-    text-decoration: solid;
-    color:darkblue;
+.biography {
+    color:brown;
+    text-decoration: double;
+    width: 500px;
+    margin: 0 200px;
 }
-.img {
-    display: block;
+.favorit {
+    width: 500px;
     margin: 0 auto;
-    width: 300px;
 }
+.pic {
+    width: 500px;
+    height: auto;
+}
+
+footer {
+    background-color:darkcyan;
+}
+.country {
+    text-align: left;
+    border: 3px solid red;
+    display: inline-block;
+    background-color:aquamarine;
+    color:blue;
+    box-sizing: border-box;
+    width: 350px;
+    padding: 50px;
+    margin: 20px 150px;
+}
+.experience {
+    box-sizing: border-box;
+    margin: 20px 150px;
+    width: 350px;
+    border: 3px solid red;
+    display: inline-block;
+    padding: 50px;
+    text-align: left;
+    background-color:aquamarine;
+    color:blue;
+
+}
+
     
 
