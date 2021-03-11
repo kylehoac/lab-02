@@ -2,7 +2,9 @@
 
 ## Project: "About Me"
 
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+In this project I have completed the task lab-02 and lab-03. 
+I use **While** and **For** loops in the project. 
+Also I applied arrays for the first time in my project.
 
 ### Author: Rinat/seattle-code-201d73
 
@@ -14,5 +16,4 @@ Any Links
 
 ### Reflections and Comments
 
-Consider including the answers to your daily journal and submission questions here
-This is also a good place to reflect on the tools and resources used and learned
+So far I have been working on simple tasks for a long time.
